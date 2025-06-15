@@ -1,5 +1,3 @@
-# Stability_GradientDescent_SuperResolution
-
 # Stability Analysis of Gradient Descent in Super-Resolution
 
 This repository implements and validates theoretical stability bounds from Lecture 8 of the Advanced Topics in Learning course on Stability Analysis for Gradient Descent, applied to super-resolution tasks with correction filters and AdaFM optimization.

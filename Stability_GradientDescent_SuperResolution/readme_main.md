@@ -7,6 +7,7 @@ This repository implements and validates theoretical stability bounds from Lectu
 This project bridges theoretical stability analysis with practical deep learning applications, demonstrating how gradient descent stability affects generalization in super-resolution models. We implement:
 
 - **Theoretical validation** of stability bounds (Theorems 8.1, 8.3, 8.5) based of:
+  
   [1] R. Bassily, V. Feldman, C. Guzmán, and K. Talwar. Stability of stochastic gradient
       descent on nonsmooth convex losses. Advances in Neural Information Processing
       Systems, 33:4381–4391, 2020.

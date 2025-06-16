@@ -10,9 +10,11 @@ This project bridges theoretical stability analysis with practical deep learning
   [1] R. Bassily, V. Feldman, C. Guzmán, and K. Talwar. Stability of stochastic gradient
       descent on nonsmooth convex losses. Advances in Neural Information Processing
       Systems, 33:4381–4391, 2020.
+  
   [2] M. Hardt, B. Recht, and Y. Singer. Train faster, generalize better: Stability of stochastic
       gradient descent. In International conference on machine learning, pages 1225–1234.
       PMLR, 2016
+  
 - **correction filter from the paper - Correction Filter for Single Image Super-Resolution:Robustifying Off-the-Shelf Deep Super-Resolvers** (CVPR 2020) for input alignment
 - **Modulating Image Restoration with Continual Levels via Adaptive Feature Modification Layers** (CVPR 2019) for adaptive feature modulation
 - **AdaFM: Adaptive Variance-Reduced Algorithm for Stochastic Minimax Optimization** (ICLR 2025) for parameter-free optimization

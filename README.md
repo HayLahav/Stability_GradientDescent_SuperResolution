@@ -4,7 +4,7 @@ This repository implements and validates theoretical stability bounds from Lectu
 
 ## Overview
 
-This project bridges theoretical stability analysis with practical deep learning applications, demonstrating how gradient descent stability affects generalization in super-resolution models. We implement:
+This project bridges theoretical stability analysis with practical deep learning applications, demonstrating how gradient descent stability affects generalization in super-resolution models. I implement:
 
 - **Theoretical validation** of stability bounds (Theorems 8.1, 8.3, 8.5)
 - **Correction Filter** (Abu Hussein et al., CVPR 2020) for input alignment

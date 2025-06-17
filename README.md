@@ -7,9 +7,9 @@ This repository implements and validates theoretical stability bounds from Lectu
 This project bridges theoretical stability analysis with practical deep learning applications, demonstrating how gradient descent stability affects generalization in super-resolution models. We implement:
 
 - **Theoretical validation** of stability bounds (Theorems 8.1, 8.3, 8.5)
-- **correction filter from the paper - Correction Filter for Single Image Super-Resolution:Robustifying Off-the-Shelf Deep Super-Resolvers** (CVPR 2020) for input alignment
-- **Modulating Image Restoration with Continual Levels via Adaptive Feature Modification Layers** (CVPR 2019) for adaptive feature modulation
-- **AdaFM: Adaptive Variance-Reduced Algorithm for Stochastic Minimax Optimization** (ICLR 2025) for parameter-free optimization
+- **Correction Filter** (Abu Hussein et al., CVPR 2020) for input alignment
+- **Adaptive Feature Modification Layers** (He et al., CVPR 2019) for feature modulation
+- **AdaFM Optimizer** (ICLR 2025) for parameter-free optimization
 - **Comprehensive stability analysis** with empirical validation
 
 ## Key Features
@@ -21,11 +21,17 @@ This project bridges theoretical stability analysis with practical deep learning
 - ✅ Extensive experiments and visualizations
 - ✅ Parameter-free optimization with AdaFM
 
+## Prerequisites
+
+- Python 3.8+
+- CUDA 10.2+ (optional, for GPU support)
+- 4GB+ RAM
+
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/Stability_GradientDescent_SuperResolution.git
+git clone https://github.com/HayLahav/Stability_GradientDescent_SuperResolution.git
 cd Stability_GradientDescent_SuperResolution
 
 # Create virtual environment (recommended)
@@ -98,23 +104,34 @@ Stability_GradientDescent_SuperResolution/
 └── docs/                # Documentation
 ```
 
+## Documentation
+
+- [Theoretical Background](docs/theory/stability_analysis_theory.md)
+- [API Reference](docs/guides/api_reference.md)
+- [Jupyter Notebooks](notebooks/)
+  - [01_theoretical_validation.ipynb](notebooks/01_theoretical_validation.ipynb) - Validate stability bounds
+  - [02_stability_analysis_demo.ipynb](notebooks/02_stability_analysis_demo.ipynb) - Interactive demo
+  - [03_experiment_visualization.ipynb](notebooks/03_experiment_visualization.ipynb) - Results visualization
+  - [04_adafm_minimax_tutorial.ipynb](notebooks/04_adafm_minimax_tutorial.ipynb) - AdaFM optimizer tutorial
+
 ## Key Results
 
+*(Results pending - experiments to be run)*
+
 ### 1. Stability Analysis
-- **Empirical stability closely follows theoretical bounds**
-- **Correction filter improves stability by ~30%**
-- **AdaFM optimizer achieves O(ε^-3) convergence**
-- **Full system shows best generalization**
+- Empirical stability vs theoretical bounds
+- Impact of correction filter
+- AdaFM convergence rate
+- Generalization performance
 
 ### 2. Price of Stability
-- **Optimization**: T = O(1/ε) iterations
-- **Generalization**: T = O(1/ε²) iterations
-- **Trade-off is fundamental and unavoidable**
+- Optimization vs generalization trade-off
+- Iteration requirements for different error targets
 
 ### 3. Parameter-Free Optimization
-- **AdaFM automatically adapts learning rates**
-- **No manual hyperparameter tuning required**
-- **Robust across different problem settings**
+- AdaFM learning rate adaptation
+- Comparison with manual tuning
+- Robustness analysis
 
 ## Theoretical Background
 
@@ -168,23 +185,19 @@ If you use this code in your research, please cite:
 ```bibtex
 @misc{stability_sr_2024,
   title={Stability Analysis of Gradient Descent in Super-Resolution},
-  author={Your Name},
+  author={Hay Lahav},
   year={2024},
-  howpublished={\url{https://github.com/username/Stability_GradientDescent_SuperResolution}}
+  howpublished={\url{https://github.com/HayLahav/Stability_GradientDescent_SuperResolution}}
 }
 ```
 
 ## References
 
-1. Lecture 8: Stability Analysis for Gradient Descent
+1. Advanced Topics in Learning course ,TAU University - Lecture 8: Stability Analysis for Gradient Descent
 2. M. Hardt et al. "Train faster, generalize better: Stability of SGD." ICML 2016
-3. Abu Hussein et al. "Correction Filter for SR." CVPR 2020
-4. He et al. "AdaFM Layers." CVPR 2019
-5. "AdaFM: Adaptive Variance-Reduced Algorithm." ICLR 2025
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+3. Abu Hussein et al. "Correction Filter for Single Image Super-Resolution." CVPR 2020
+4. He et al. "Modulating Image Restoration with Continual Levels via Adaptive Feature Modification Layers." CVPR 2019
+5. "AdaFM: Adaptive Variance-Reduced Algorithm for Stochastic Minimax Optimization." ICLR 2025
 
 ## Acknowledgments
 

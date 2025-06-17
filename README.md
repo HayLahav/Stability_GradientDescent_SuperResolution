@@ -104,16 +104,6 @@ Stability_GradientDescent_SuperResolution/
 └── docs/                # Documentation
 ```
 
-## Documentation
-
-- [Theoretical Background](docs/theory/stability_analysis_theory.md)
-- [API Reference](docs/guides/api_reference.md)
-- [Jupyter Notebooks](notebooks/)
-  - [01_theoretical_validation.ipynb](notebooks/01_theoretical_validation.ipynb) - Validate stability bounds
-  - [02_stability_analysis_demo.ipynb](notebooks/02_stability_analysis_demo.ipynb) - Interactive demo
-  - [03_experiment_visualization.ipynb](notebooks/03_experiment_visualization.ipynb) - Results visualization
-  - [04_adafm_minimax_tutorial.ipynb](notebooks/04_adafm_minimax_tutorial.ipynb) - AdaFM optimizer tutorial
-
 ## Key Results
 
 *(Results pending - experiments to be run)*

@@ -1,32 +1,39 @@
 """
-Data handling utilities
+Data handling utilities and datasets
 """
 
-from .dataset import SyntheticSRDataset, RealSRDataset
-from .transforms import (
+from src.data.synthetic import (
+    SyntheticSRDataset,
+    generate_gradient_pattern,
+    generate_checkerboard_pattern,
+    generate_circular_pattern,
+    generate_random_pattern,
+    generate_texture_pattern,
+    generate_mixed_pattern,
+    create_perturbed_dataset
+)
+from src.data.dataset import RealSRDataset
+from src.data.transforms import (
     RandomCrop,
     RandomFlip,
     RandomRotation,
     Normalize,
     ToTensor
 )
-from .synthetic_generator import (
-    generate_gradient_pattern,
-    generate_checkerboard_pattern,
-    generate_circular_pattern,
-    generate_random_pattern
-)
 
 __all__ = [
     'SyntheticSRDataset',
     'RealSRDataset',
+    'generate_gradient_pattern',
+    'generate_checkerboard_pattern',
+    'generate_circular_pattern',
+    'generate_random_pattern',
+    'generate_texture_pattern',
+    'generate_mixed_pattern',
+    'create_perturbed_dataset',
     'RandomCrop',
     'RandomFlip',
     'RandomRotation',
     'Normalize',
-    'ToTensor',
-    'generate_gradient_pattern',
-    'generate_checkerboard_pattern',
-    'generate_circular_pattern',
-    'generate_random_pattern'
+    'ToTensor'
 ]

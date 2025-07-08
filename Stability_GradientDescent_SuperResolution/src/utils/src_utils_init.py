@@ -1,28 +1,36 @@
 """
-Utility functions
+Utility functions for configuration, visualization, and metrics
 """
 
-from .visualization import (
+from src.utils.config import (
+    Config,
+    load_config,
+    save_config,
+    merge_configs,
+    DEFAULT_TRAINING_CONFIG,
+    DEFAULT_ADAFM_CONFIG
+)
+from src.utils.visualization import (
     plot_stability_analysis,
     plot_convergence_curves,
     plot_sample_images,
     plot_theoretical_bounds,
     create_figure_grid
 )
-from .metrics import (
+from src.utils.metrics import (
     calculate_psnr,
     calculate_ssim,
     calculate_mse,
     evaluate_model
 )
-from .config import (
-    load_config,
-    save_config,
-    merge_configs,
-    Config
-)
 
 __all__ = [
+    'Config',
+    'load_config',
+    'save_config',
+    'merge_configs',
+    'DEFAULT_TRAINING_CONFIG',
+    'DEFAULT_ADAFM_CONFIG',
     'plot_stability_analysis',
     'plot_convergence_curves',
     'plot_sample_images',
@@ -31,9 +39,5 @@ __all__ = [
     'calculate_psnr',
     'calculate_ssim',
     'calculate_mse',
-    'evaluate_model',
-    'load_config',
-    'save_config',
-    'merge_configs',
-    'Config'
+    'evaluate_model'
 ]

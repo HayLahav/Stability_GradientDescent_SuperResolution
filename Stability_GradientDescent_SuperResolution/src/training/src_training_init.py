@@ -1,30 +1,32 @@
 """
-Training utilities
+Training utilities and callbacks
 """
 
-from .trainer import Trainer, StabilityTrainer
-from .callbacks import (
+from src.training.trainer import Trainer, StabilityTrainer
+from src.training.callbacks import (
+    Callback,
     EarlyStopping,
     ModelCheckpoint,
     LearningRateMonitor,
     StabilityMonitor
 )
-from .losses import (
-    PerceptualLoss,
+from src.training.losses import (
     PSNRLoss,
     SSIMLoss,
+    PerceptualLoss,
     CombinedLoss
 )
 
 __all__ = [
     'Trainer',
     'StabilityTrainer',
+    'Callback',
     'EarlyStopping',
     'ModelCheckpoint',
     'LearningRateMonitor',
     'StabilityMonitor',
-    'PerceptualLoss',
     'PSNRLoss',
     'SSIMLoss',
+    'PerceptualLoss',
     'CombinedLoss'
 ]

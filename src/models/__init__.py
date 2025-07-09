@@ -7,7 +7,7 @@ from .srcnn import SimpleSRCNN
 from .adafm_layers import AdaFMLayer
 from .correction_filter import CorrectionFilter
 
-# Import utility function that doesn't create circular dependencies
+# Factory function to create SRCNN variants
 def create_srcnn_variant(use_correction=False, use_adafm=False, **kwargs):
     """
     Factory function to create SRCNN variants

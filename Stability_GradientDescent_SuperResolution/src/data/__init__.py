@@ -2,7 +2,8 @@
 Data handling utilities and datasets
 """
 
-from src.data.synthetic import (
+# Import from synthetic.py (main implementation)
+from .synthetic import (
     SyntheticSRDataset,
     generate_gradient_pattern,
     generate_checkerboard_pattern,
@@ -12,8 +13,12 @@ from src.data.synthetic import (
     generate_mixed_pattern,
     create_perturbed_dataset
 )
-from src.data.dataset import RealSRDataset
-from src.data.transforms import (
+
+# Import from dataset.py (real data support)
+from .dataset import RealSRDataset
+
+# Import transforms
+from .transforms import (
     RandomCrop,
     RandomFlip,
     RandomRotation,
@@ -22,15 +27,24 @@ from src.data.transforms import (
 )
 
 __all__ = [
+    # Main synthetic dataset
     'SyntheticSRDataset',
-    'RealSRDataset',
+    
+    # Pattern generators
     'generate_gradient_pattern',
-    'generate_checkerboard_pattern',
+    'generate_checkerboard_pattern', 
     'generate_circular_pattern',
     'generate_random_pattern',
     'generate_texture_pattern',
     'generate_mixed_pattern',
+    
+    # Utilities
     'create_perturbed_dataset',
+    
+    # Real data support
+    'RealSRDataset',
+    
+    # Transforms
     'RandomCrop',
     'RandomFlip',
     'RandomRotation',

@@ -24,15 +24,10 @@ tqdm>=4.64.0
 pytest>=7.0.0
 pytest-cov>=4.0.0
 
-# FIXED: Added missing dependencies found in code
-# For evaluation metrics (SSIM calculation)
-scikit-image>=0.19.0
-
-# For tensor operations and advanced indexing
-einops>=0.6.0
-
-# For configuration merging and validation
-omegaconf>=2.3.0
+# Additional Dependencies
+scikit-image>=0.19.0      # For SSIM calculation and image processing
+einops>=0.6.0            # For tensor operations and advanced indexing
+omegaconf>=2.3.0         # For configuration merging and validation
 
 # Optional but Recommended
 # Uncomment if you want these features:
@@ -54,9 +49,3 @@ omegaconf>=2.3.0
 # black>=22.0.0
 # flake8>=5.0.0
 # isort>=5.10.0
-scikit-image>=0.19.0
-einops>=0.6.0
-omegaconf>=2.3.0
-scikit-image>=0.19.0
-einops>=0.6.0
-omegaconf>=2.3.0

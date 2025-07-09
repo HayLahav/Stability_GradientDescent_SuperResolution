@@ -1,0 +1,52 @@
+# Development Dependencies for Stability Analysis Project
+
+# Include base requirements
+-r requirements.txt
+
+# Testing Framework
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-xdist>=3.0.0          # Parallel test execution
+pytest-mock>=3.10.0          # Mocking utilities
+
+# Code Quality and Formatting
+black>=22.0.0                # Code formatter
+flake8>=5.0.0                # Linting
+isort>=5.10.0                # Import sorting
+pre-commit>=2.20.0           # Pre-commit hooks
+mypy>=1.0.0                  # Type checking
+
+# Documentation
+sphinx>=5.0.0               # Documentation generator
+sphinx-rtd-theme>=1.0.0     # Read the Docs theme
+myst-parser>=0.18.0         # Markdown support for Sphinx
+
+# Jupyter and Interactive Development
+jupyter>=1.0.0              # Jupyter notebooks
+jupyterlab>=3.4.0           # JupyterLab interface
+ipywidgets>=8.0.0           # Interactive widgets
+nbconvert>=7.0.0            # Notebook conversion
+
+# Additional Visualization Tools
+plotly>=5.0.0               # Interactive plotting
+tensorboard>=2.10.0         # TensorBoard logging
+seaborn>=0.11.0             # Statistical plotting
+
+# Performance Profiling
+line-profiler>=4.0.0        # Line-by-line profiling
+memory-profiler>=0.60.0     # Memory usage profiling
+
+# Development Utilities
+watchdog>=3.0.0             # File system monitoring
+python-dotenv>=1.0.0        # Environment variable management
+rich>=13.0.0                # Rich terminal output
+
+# Build and Packaging
+build>=0.10.0               # Build system
+twine>=4.0.0                # Package uploading
+wheel>=0.40.0               # Wheel format support
+
+# Optional Heavy Dependencies (install manually if needed)
+# scikit-image>=0.19.0      # Advanced image processing
+# opencv-python>=4.6.0     # Computer vision
+# transformers>=4.20.0     # For advanced models

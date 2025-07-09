@@ -2,8 +2,8 @@
 Optimizer implementations for stability analysis
 """
 
-from src.optimizers.adafm_optimizer import AdaFMOptimizer
-from src.optimizers.adaptive_sgd import (
+from .adafm_optimizer import AdaFMOptimizer
+from .adaptive_sgd import (
     AdaptiveSGD,
     constant_lr,
     step_decay_lr,

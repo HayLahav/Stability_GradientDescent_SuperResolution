@@ -2,15 +2,15 @@
 Training utilities and callbacks
 """
 
-from src.training.trainer import Trainer, StabilityTrainer
-from src.training.callbacks import (
+from .trainer import Trainer, StabilityTrainer
+from .callbacks import (
     Callback,
     EarlyStopping,
     ModelCheckpoint,
     LearningRateMonitor,
     StabilityMonitor
 )
-from src.training.losses import (
+from .losses import (
     PSNRLoss,
     SSIMLoss,
     PerceptualLoss,

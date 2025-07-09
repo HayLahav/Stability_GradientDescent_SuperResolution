@@ -18,7 +18,7 @@ import logging
 from datetime import datetime
 
 from src.models.srcnn import SimpleSRCNN
-from src.optimizers.adafm_optimizerimport AdaFMOptimizer
+from src.optimizers.adafm_optimizer import AdaFMOptimizer
 from src.optimizers.adaptive_sgd import AdaptiveSGD, polynomial_decay_lr
 from src.data.synthetic import SyntheticSRDataset
 from src.training.trainer import StabilityTrainer

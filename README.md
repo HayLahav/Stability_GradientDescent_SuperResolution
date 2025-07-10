@@ -112,7 +112,7 @@ pip install -e .
 bash scripts/run_all_experiments.sh
 
 # Or run individual experiments
-python experiments/experiments_main.py --config experiments/configs/baseline.yaml
+python experiments/experiments_main.py --config experiments/configs/baseline.yaml  '''
 
 
 ## 🎓 **Theoretical Background & Research Impact**

@@ -92,6 +92,29 @@ Both implementations share the same core research methodology and theoretical fo
 - **Colab**: Optimized for interactive learning, research exploration, and comprehensive analysis with educational structure and memory constraints
 - **Local**: Optimized for production deployment, custom development, and scalable experiments with modular architecture and performance focus
 
+  ## 🎓 **Theoretical Background & Research Impact**
+
+### **Theoretical Foundation**
+
+The implementation validates key results from Lecture 8 on Stability Analysis:
+
+**Strongly Convex Case (Theorem 8.1)**:
+γ(m) = O(L²/(α√T) + L²/(αm))
+
+**General Case (Theorem 8.3)**:
+γ(m) = 4ηL²√T + 4ηL²T/m
+
+**Smooth Case (Theorem 8.5)**:
+γ(m) = 2ηTL²/m
+
+Where γ(m) is the stability parameter, T is iterations, m is sample size, η is learning rate, L is Lipschitz constant, and α is strong convexity parameter.
+
+### **Main Contributions**
+
+1. **Empirical Calibration Methodology**: Framework for making theoretical stability bounds practically useful
+2. **Progressive Validation Framework**: Systematic methodology for theory-practice integration
+3. **Educational Integration**: Complete pipeline from abstract theory to working implementation
+
 ## 🚀 **Quick Start**
 
 ### **For Learning & Research (Colab)**
@@ -112,49 +135,22 @@ pip install -e .
 bash scripts/run_all_experiments.sh
 
 # Or run individual experiments
-python experiments/experiments_main.py --config experiments/configs/baseline.yaml  '''
-
-
-## 🎓 **Theoretical Background & Research Impact**
-
-### **Theoretical Foundation**
-
-The implementation validates key results from Lecture 8 on Stability Analysis:
-
-**Strongly Convex Case (Theorem 8.1)**:
-γ(m) = O(L²/(α√T) + L²/(αm))
-
-**General Case (Theorem 8.3)**:
-γ(m) = 4ηL²√T + 4ηL²T/m
-
-**Smooth Case (Theorem 8.5)**:
-γ(m) = 2ηTL²/m
-
-Where γ(m) is the stability parameter, T is iterations, m is sample size, η is learning rate, L is Lipschitz constant, and α is strong convexity parameter.
-
-### **Main Contributions**
-
-1. **Empirical Calibration Methodology**: Framework for making theoretical stability bounds practically useful
-2. **Additive Component Analysis**: Superior modeling approach for multi-component neural architectures
-3. **Progressive Validation Framework**: Systematic methodology for theory-practice integration
-4. **Educational Integration**: Complete pipeline from abstract theory to working implementation
-
-### **Educational Applications**
-
-This project serves as a complete pedagogical framework for:
-- **Academic Teaching**: Demonstrating stability theory application to real ML systems
-- **Research Training**: Template for theory-practice integration methodology
-- **ML Engineering**: Guidance for stability-aware neural architecture design
-- **Graduate Studies**: Comprehensive example of theoretical computer science in practice
+python experiments/experiments_main.py --config experiments/configs/baseline.yaml
+```
 
 ## Citation
 
 If you use this code in your research, please cite:
 
 ```bibtex
-@misc{stability_sr_2024,
+@misc{stability_sr_2025,
   title={Stability Analysis of Gradient Descent in Super-Resolution},
   author={Hay Lahav},
-  year={2024},
+  year={2025},
   howpublished={\url{https://github.com/HayLahav/Stability_GradientDescent_SuperResolution}}
 }
+```
+
+
+
+
